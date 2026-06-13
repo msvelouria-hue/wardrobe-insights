@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wardrobe-insights"
+version = "0.1.0"
+description = "SQLite-backed wardrobe analytics and freshness scoring in clean Python."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sabrina Olliphant" }]
+dependencies = []
+
+[project.scripts]
+wardrobe-insights = "wardrobe_insights.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+wardrobe_insights = ["schema.sql"]
