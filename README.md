@@ -2,9 +2,9 @@
 
 A compact Python data project for analyzing wardrobe usage, outfit history, and item freshness from a normalized SQLite schema.
 
-This repo is intentionally small: it demonstrates clean Python domain logic, a real relational schema, a testable data access layer, and a local development path that works without external services.
+I made this as a small, self-contained Python data project connected to the same problem space as Velune: tracking wardrobe usage and deciding which items should come back into rotation.
 
-## What This Shows
+## What It Shows
 
 - Python 3.9+ project structure with `src/` layout
 - SQLite schema with foreign keys, join tables, and indexes
@@ -84,7 +84,7 @@ cd wardrobe-insights
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
-python -m unittest
+python -m unittest discover -s tests
 ```
 
 ## CLI Usage
@@ -121,10 +121,10 @@ That makes it useful as a small companion service or data-analysis layer for war
 ## Quality Checks
 
 ```bash
-python -m unittest
+python -m unittest discover -s tests
 python -m compileall src tests
 ```
 
 ## License
 
-MIT
+No open-source license has been added.
