@@ -127,4 +127,4 @@ python -m compileall src tests
 
 ## License
 
-No open-source license has been added.
+MIT. In plain terms, people can use, copy, modify, and share this small example project as long as they keep the license notice. It does not come with a warranty.

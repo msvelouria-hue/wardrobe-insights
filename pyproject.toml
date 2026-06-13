@@ -9,6 +9,7 @@ description = "SQLite-backed wardrobe analytics and freshness scoring in clean P
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Sabrina Olliphant" }]
+license = { text = "MIT" }
 dependencies = []
 
 [project.scripts]
